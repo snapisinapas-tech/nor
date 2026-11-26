@@ -2,350 +2,189 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#ffffff">
-<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer-when-downgrade">
 <title>Nordstrom - $750 Gift Card Offer</title>
-
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-    --nord-ink:#0d0e13;
-    --nord-ink-hover:#000000;
-    --text-main:#111111;
-    --text-muted:#6b7280;
-    --box-bg:#f5f5f5;
+  --nord-ink:#0d0e13;
+  --nord-ink-hover:#000000;
+  --text-main:#111111;
+  --text-muted:#6b7280;
+  --box-bg:#f5f5f6;
 }
-
 *{box-sizing:border-box;margin:0;padding:0}
-
 body{
-    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    background-color:#ffffff;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding:0;
-    min-height:100vh;
-    color:var(--text-main);
-    -webkit-font-smoothing:antialiased;
-    -webkit-tap-highlight-color:transparent;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  background-color:#ffffff;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  min-height:100vh;
+  color:var(--text-main);
+  -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent;
 }
+.main-container{width:100%;max-width:600px;padding:2rem 1rem}
+.card{background:transparent;text-align:center}
 
-.main-container{
-    width:100%;
-    max-width:600px;
-    padding:2rem 1rem;
-}
+/* Nordstrom wordmark */
+.logo-container{margin-bottom:1.5rem}
+.nord-logo{display:inline-flex;align-items:baseline}
+.nord-wordmark{font-size:26px;font-weight:800;letter-spacing:.28em;color:var(--nord-ink);text-transform:uppercase;padding-left:.28em}
 
-.card{
-    background:transparent;
-    border-radius:0;
-    padding:0;
-    box-shadow:none;
-    text-align:center;
-}
-
-/* --- Nordstrom gift card hero (kept from the original Nordstrom LP) --- */
-.card-wrap{display:flex;justify-content:center;margin-bottom:1.75rem}
-.gc{position:relative;width:300px;height:190px;border-radius:22px;overflow:hidden;
-background:linear-gradient(135deg,#0d0e13 0%,#232327 55%,#3a3a40 100%);
-box-shadow:0 20px 44px -16px rgba(10,10,14,.55),0 2px 6px rgba(10,10,14,.2)}
-.gc-brand{position:absolute;top:22px;left:0;right:0;z-index:2;display:flex;justify-content:center;
-color:#fff;font-weight:600;font-size:21px;letter-spacing:.42em;text-transform:uppercase;padding-left:.42em}
-
+/* Offer */
 .offer-header{margin-bottom:1.5rem}
+.up-to{color:var(--text-muted);font-size:.85rem;font-weight:700;letter-spacing:.15em;margin-bottom:.5rem}
+.offer-title{font-size:1.8rem;font-weight:800;line-height:1.25;color:var(--text-main)}
+.offer-title .price{font-size:2.2rem;color:var(--text-main)}
 
-.up-to{
-    color:var(--text-muted);
-    font-size:0.85rem;
-    font-weight:700;
-    letter-spacing:0.15em;
-    margin-bottom:0.5rem;
-}
-
-.offer-title{
-    font-size:1.8rem;
-    font-weight:800;
-    line-height:1.25;
-    color:var(--text-main);
-}
-
-.offer-title .price{
-    font-size:2.2rem;
-    color:var(--text-main);
-}
-
+/* Steps */
 .steps-section{margin-bottom:2rem}
+.how-to-claim{color:var(--text-muted);font-size:.85rem;font-weight:700;letter-spacing:.15em;margin-bottom:1rem}
+.steps-box{background-color:var(--box-bg);border-radius:8px;padding:.5rem 1.5rem;text-align:left;border:1px solid #e4e4e7}
+.step{display:flex;align-items:center;padding:1rem 0;transition:transform .2s ease}
+.step:hover{transform:translateX(5px)}
+.step-number{background-color:var(--nord-ink);color:#fff;width:28px;height:28px;border-radius:50%;
+  display:flex;justify-content:center;align-items:center;font-size:.9rem;font-weight:700;margin-right:1rem;flex-shrink:0}
+.step-text{font-size:1.05rem;font-weight:600;color:var(--text-main)}
+.separator{height:1px;background-color:#e4e4e7}
 
-.how-to-claim{
-    color:var(--text-muted);
-    font-size:0.85rem;
-    font-weight:700;
-    letter-spacing:0.15em;
-    margin-bottom:1rem;
-}
-
-.steps-box{
-    background-color:var(--box-bg);
-    border-radius:8px;
-    padding:0.5rem 1.5rem;
-    text-align:left;
-}
-
-.step{
-    display:flex;
-    align-items:center;
-    padding:1rem 0;
-}
-
-.step-number{
-    background-color:var(--text-main);
-    color:white;
-    width:28px;
-    height:28px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:0.9rem;
-    font-weight:700;
-    margin-right:1rem;
-    flex-shrink:0;
-}
-
-.step-text{
-    font-size:1.05rem;
-    font-weight:600;
-    color:var(--text-main);
-}
-
-.separator{height:1px;background-color:#e5e5e5}
-
+/* CTA */
 .cta-button{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:var(--nord-ink);
-    color:#ffffff;
-    text-decoration:none;
-    border:none;
-    border-radius:8px;
-    width:100%;
-    padding:1.25rem;
-    font-family:inherit;
-    font-size:1.25rem;
-    font-weight:700;
-    cursor:pointer;
-    box-shadow:0 8px 20px rgba(13,14,19,.3);
-    transition:all 0.2s ease;
-    margin-bottom:1.5rem;
+  display:flex;align-items:center;justify-content:center;
+  background-color:var(--nord-ink);color:#fff;text-decoration:none;
+  border:none;border-radius:8px;width:100%;padding:1.25rem;
+  font-family:inherit;font-size:1.25rem;font-weight:700;cursor:pointer;
+  box-shadow:0 8px 20px rgba(13,14,19,.3);transition:all .2s ease;margin-bottom:1.5rem;
 }
+.cta-button:hover{background-color:var(--nord-ink-hover);transform:translateY(-2px);box-shadow:0 10px 25px rgba(13,14,19,.4)}
+.cta-button:active{transform:translateY(0);box-shadow:0 5px 15px rgba(13,14,19,.3)}
 
-.cta-button:hover{
-    background-color:var(--nord-ink-hover);
-    transform:translateY(-2px);
-    box-shadow:0 10px 25px rgba(13,14,19,.4);
-}
-
-.cta-button:active{
-    transform:translateY(0);
-    box-shadow:0 5px 15px rgba(13,14,19,.3);
-}
-
+/* Terms */
 .terms-section{margin-bottom:2rem}
-
-.terms-link{
-    color:#4b6b8b;
-    font-weight:600;
-    font-size:0.95rem;
-    text-decoration:none;
-    display:inline-block;
-    margin-bottom:1rem;
-    transition:color 0.2s ease;
-}
-
-.terms-link:hover{
-    color:var(--text-main);
-    text-decoration:underline;
-}
-
-.terms-text{
-    color:var(--text-muted);
-    font-size:0.85rem;
-    line-height:1.6;
-}
-
-.terms-text + .terms-text{margin-top:0.9rem}
+.terms-link{color:#4b6b8b;font-weight:600;font-size:.95rem;text-decoration:none;display:inline-block;margin-bottom:1rem;transition:color .2s ease}
+.terms-link:hover{color:var(--text-main);text-decoration:underline}
+.terms-text{color:var(--text-muted);font-size:.85rem;line-height:1.6}
+.terms-text + .terms-text{margin-top:.9rem}
 .terms-text b{color:var(--text-muted);font-weight:700}
 
-.reviews{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:0.5rem;
-    color:var(--text-muted);
-    font-weight:600;
-    font-size:1rem;
-}
-
+/* Stars */
+.reviews{display:flex;align-items:center;justify-content:center;gap:.5rem;color:var(--text-muted);font-weight:600;font-size:1rem}
 .tp-stars{display:flex;gap:2px}
-
-.tp-star{
-    background-color:#00b67a;
-    width:22px;
-    height:22px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.tp-star svg{width:14px;height:14px;fill:white}
-
+.tp-star{background-color:#00b67a;width:22px;height:22px;display:flex;justify-content:center;align-items:center}
+.tp-star svg{width:14px;height:14px;fill:#fff}
 .tp-star.half{background:linear-gradient(90deg,#00b67a 50%,#dcdce6 50%)}
 
-/* Social Proof Toast */
+/* Social proof toast */
 .social-proof-toast{
-    position:fixed;
-    top:20px;
-    left:50%;
-    transform:translateX(-50%) translateY(-150px);
-    background-color:rgba(255,255,255,0.95);
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
-    border-radius:50px;
-    padding:12px 24px;
-    box-shadow:0 4px 20px rgba(0,0,0,0.15);
-    z-index:1000;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    opacity:0;
-    transition:transform 0.6s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.6s ease;
-    border:1px solid rgba(13,14,19,0.1);
-    min-width:320px;
-    text-align:center;
+  position:fixed;top:20px;left:50%;
+  transform:translateX(-50%) translateY(-150px);
+  background-color:rgba(255,255,255,.95);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-radius:50px;padding:12px 24px;
+  box-shadow:0 4px 20px rgba(0,0,0,.15);
+  z-index:1000;display:flex;flex-direction:column;align-items:center;
+  opacity:0;transition:transform .6s cubic-bezier(.175,.885,.32,1.275),opacity .6s ease;
+  border:1px solid rgba(13,14,19,.1);min-width:320px;text-align:center;
 }
-
-.social-proof-toast.show{
-    transform:translateX(-50%) translateY(0);
-    opacity:1;
-}
-
-.toast-content{
-    font-size:0.95rem;
-    font-weight:500;
-    color:var(--text-main);
-    margin-bottom:4px;
-}
-
-.toast-content span,
-.toast-reward{font-weight:700;color:var(--nord-ink)}
-
-.toast-time{font-size:0.8rem;color:var(--text-muted)}
+.social-proof-toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast-content{font-size:.95rem;font-weight:500;color:var(--text-main);margin-bottom:4px}
+.toast-content span,.toast-reward{font-weight:700;color:var(--nord-ink)}
+.toast-time{font-size:.8rem;color:var(--text-muted)}
 
 @media(max-width:400px){
-    .main-container{padding:1.75rem 1rem}
-    .gc{width:270px;height:171px}
-    .offer-title{font-size:1.6rem}
-    .offer-title .price{font-size:2rem}
-    .steps-box{padding:0.5rem 1.1rem}
-    .step-text{font-size:1rem}
-    .cta-button{font-size:1.15rem}
-    .social-proof-toast{min-width:0;width:calc(100% - 32px)}
+  .main-container{padding:1.75rem 1rem}
+  .offer-title{font-size:1.6rem}
+  .offer-title .price{font-size:2rem}
+  .steps-box{padding:.5rem 1.1rem}
+  .step-text{font-size:1rem}
+  .cta-button{font-size:1.15rem}
+  .social-proof-toast{min-width:0;width:calc(100% - 32px)}
 }
 </style>
 </head>
 <body>
 
 <div id="social-proof-toast" class="social-proof-toast">
-    <div class="toast-content">
-        <span id="toast-name">Someone</span> from <span id="toast-location">Anywhere</span> just claimed a <span class="toast-reward">$750 Nordstrom Gift Card!</span>
-    </div>
-    <div class="toast-time">Just now</div>
+  <div class="toast-content">
+    <span id="toast-name">Someone</span> from <span id="toast-location">Anywhere</span> just claimed a <span class="toast-reward">$750 Nordstrom Gift Card!</span>
+  </div>
+  <div class="toast-time">Just now</div>
 </div>
 
 <div class="main-container">
-    <div class="card">
+  <div class="card">
 
-        <div class="card-wrap">
-            <div class="gc">
-                <div class="gc-brand">
-                    <span>Nordstrom</span>
-                </div>
-            </div>
+    <header class="logo-container">
+      <div class="nord-logo">
+        <span class="nord-wordmark">Nordstrom</span>
+      </div>
+    </header>
+
+    <section class="offer-header">
+      <div class="up-to">UP TO</div>
+      <h1 class="offer-title">
+        <span class="price">$750 Nordstrom</span><br>
+        Gift Card Offer
+      </h1>
+    </section>
+
+    <section class="steps-section">
+      <h2 class="how-to-claim">HOW TO CLAIM</h2>
+      <div class="steps-box">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-text">Click the Button Below</div>
         </div>
+        <div class="separator"></div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-text">Enter Your Basic Info</div>
+        </div>
+        <div class="separator"></div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-text">Complete Required Offers</div>
+        </div>
+        <div class="separator"></div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-text">Claim up to $750 Nordstrom Gift Card</div>
+        </div>
+      </div>
+    </section>
 
-        <section class="offer-header">
-            <div class="up-to">UP TO</div>
-            <h1 class="offer-title">
-                <span class="price">$750 Nordstrom</span><br>
-                Gift Card Offer
-            </h1>
-        </section>
+    <a class="cta-button" href="https://trksy.org/aff_c?offer_id=4632&amp;aff_id=39620" rel="sponsored nofollow">Claim Your Reward</a>
 
-        <section class="steps-section">
-            <h2 class="how-to-claim">HOW TO CLAIM</h2>
-            <div class="steps-box">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-text">Click the Button Below</div>
-                </div>
-                <div class="separator"></div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-text">Enter Your Basic Info</div>
-                </div>
-                <div class="separator"></div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-text">Complete 4-5 Required Deals</div>
-                </div>
-                <div class="separator"></div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-text">Claim up to $750 Nordstrom Gift Card</div>
-                </div>
-            </div>
-        </section>
+    <section class="terms-section">
+      <a href="#" class="terms-link">How do I qualify and claim my reward?</a>
+      <p class="terms-text">
+        To qualify for your Nordstrom gift card, you'll need to complete 4-5 required deals to unlock the full $750 reward. Be sure to finish each deal from start to completion. Once all required deals are successfully completed, you'll be eligible to claim your reward. A purchase or paid subscription may be required for some offers, and not all participants receive a reward. Available to US residents 18+.
+      </p>
+      <p class="terms-text">
+        <b>Not affiliated with, endorsed by, or sponsored by Nordstrom.</b> Nordstrom is a trademark of Nordstrom, Inc., used here only to describe the reward on offer.
+      </p>
+    </section>
 
-        <a class="cta-button js-cta" href="https://trksy.org/aff_c?offer_id=4632&aff_id=39620">Claim Your Reward</a>
+    <section class="reviews">
+      <span class="review-text">Excellent</span>
+      <span class="tp-stars">
+        <span class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <span class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <span class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <span class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <span class="tp-star half"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+      </span>
+      <span class="rating-score">4.8 / 5</span>
+    </section>
 
-        <section class="terms-section">
-            <a href="#" class="terms-link">How do I qualify and claim my reward?</a>
-            <p class="terms-text">
-                To qualify for your Nordstrom gift card, you'll need to complete 4-5 required deals to unlock the full $750 reward. Be sure to finish each deal from start to completion. Once all required deals are successfully completed, you'll be eligible to claim your reward. A purchase or paid subscription may be required for some offers, and not all participants receive a reward. Available to US residents 18+.
-            </p>
-            <p class="terms-text">
-                <b>Not affiliated with, endorsed by, or sponsored by Nordstrom.</b> Nordstrom is a trademark of Nordstrom, Inc., used here only to describe the reward on offer.
-            </p>
-        </section>
-
-        <section class="reviews">
-            <span class="review-text">Excellent</span>
-            <span class="tp-stars">
-                <div class="tp-star">
-                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <div class="tp-star">
-                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <div class="tp-star">
-                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <div class="tp-star">
-                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <div class="tp-star half">
-                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-            </span>
-            <span class="rating-score">4.8 / 5</span>
-        </section>
-
-    </div>
+  </div>
 </div>
 
 <script>
@@ -376,17 +215,33 @@ color:#fff;font-weight:600;font-size:21px;letter-spacing:.42em;text-transform:up
 
   setTimeout(function(){showNotification();scheduleNextNotification();},2500);
 
-  // forward incoming query params onto the offer link
-  var link=document.querySelectorAll(".js-cta");
-  function build(base){
-    var qs=window.location.search;
-    if(!qs)return base;
-    return base+(base.indexOf("?")>-1?"&"+qs.substring(1):qs);
+  // pass incoming click params (fbclid, ad ids, ...) onto the offer link
+  var OPEN='{'+'{';
+  var KEYS=['fbclid','ad_id','adset_id','campaign_id','campaign_name','placement','source'];
+  function isMacro(v){return !v||v.indexOf(OPEN)!==-1||v.indexOf('%7B%7B')!==-1;}
+  function grab(){
+    var s={},qs=new URLSearchParams(location.search);
+    KEYS.forEach(function(k){
+      var v=qs.get(k);
+      try{
+        if(v&&!isMacro(v))sessionStorage.setItem('q_'+k,v);
+        var saved=sessionStorage.getItem('q_'+k);
+        if(saved&&!isMacro(saved))s[k]=saved;
+      }catch(err){if(v&&!isMacro(v))s[k]=v;}
+    });
+    return s;
   }
-  link.forEach(function(a){
-    var href=a.getAttribute("href");
-    a.addEventListener("click",function(e){e.preventDefault();window.location.href=build(href);});
-  });
+  grab();
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href*="trksy.org"]');
+    if(!a)return;
+    var s=grab();
+    try{
+      var u=new URL(a.getAttribute('href'),location.href);
+      Object.keys(s).forEach(function(k){u.searchParams.set(k,s[k]);});
+      a.href=u.toString();
+    }catch(err){}
+  },true);
 })();
 </script>
 </body>
